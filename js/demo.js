@@ -48,7 +48,7 @@ app.controller("ChartCtrl", function($scope) {
         bindto: "#chart3",
         data: {
 
-            x: "x1",
+            // x: "x1",
 
             // xFormat: "%Y%m%d %H:%M",
 
@@ -63,10 +63,10 @@ app.controller("ChartCtrl", function($scope) {
                 columns: [
                 // ["x1", 5, 15, 45, 135, 287, 642],
                 // ["x2", 2, 74, 108, 253, 307, 908],
-                ["x1", '2014-01-06', '2013-02-10', '2013-03-28', '2013-6-10', '2013-10-15', '2014-01-06'],
+                // ["x1", '2014-01-06', '2013-02-10', '2013-03-28', '2013-6-10', '2013-10-15', '2014-01-06'],
                 // ["x1", '20140606 01:34', '20130210 03:55', '20130328 9:10', '20130610 13:24', '20131015 17:58', '20140106 21:36'],
-                ["data1dsdsd dssddsmdsmksksk \n kskdskdkdkdkdk \r dkkdkdkd", 4, 8, 15, 16, 23, 42],
-                ["data2多騎術為多騎術為", 42, 36, NaN, 18, 45, 66]
+                ["data1", 4, 8, 15, 16, 23, 42],
+                ["data2", 42, 36, NaN, 18, 45, 66]
             ],
 
             // rows: [
@@ -103,7 +103,6 @@ app.controller("ChartCtrl", function($scope) {
 
             onclick: function(d, e) {
                 console.log(e);
-                e.target.fill = "red";
             }
         },
 
@@ -112,7 +111,7 @@ app.controller("ChartCtrl", function($scope) {
             // rotated: true,
 
             x: {
-                type: "timeseries", //categories
+                // type: "timeseries", //categories
 
                 // categories: ["cat1", "cat2", "cat3", "cat4", "cat5", "cat6"],
 
@@ -121,12 +120,12 @@ app.controller("ChartCtrl", function($scope) {
                     position: "outer-left"
                 },
 
-                tick: {
-                    rotate: 75,
-                    // count: 4,
-                    // fit: true,
-                    format: "%m-%d %H:%M"
-                },
+                // tick: {
+                //     rotate: 75,
+                //     // count: 4,
+                //     // fit: true,
+                //     format: "%m-%d %H:%M"
+                // },
 
                 // height: 130
             },
@@ -162,28 +161,28 @@ app.controller("ChartCtrl", function($scope) {
         //     }
         // },
 
-        regions: [{
-            axis: 'x',
-            start: 2,
-            end: 4,
-            class: 'regionX'
-        }, {
-            axis: 'y',
-            start: 40,
-            class: 'regionY'
-        }, {
-            axis: 'y2',
-            end: 100,
-            class: 'regionY2'
-        }],
+        // regions: [{
+        //     axis: 'x',
+        //     start: 2,
+        //     end: 4,
+        //     class: 'regionX'
+        // }, {
+        //     axis: 'y',
+        //     start: 40,
+        //     class: 'regionY'
+        // }, {
+        //     axis: 'y2',
+        //     end: 100,
+        //     class: 'regionY2'
+        // }],
 
-        subchart:{
-        	show: true
-        },
+        // subchart:{
+        // 	show: true
+        // },
 
-        zoom:{
-        	enabled: true
-        },
+        // zoom:{
+        // 	enabled: true
+        // },
 
         // legend: {
         //     // show: false,
