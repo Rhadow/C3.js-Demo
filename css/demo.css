@@ -1,0 +1,32 @@
+body {
+    font: 10px sans-serif;
+    text-align: center;
+}
+
+.axis {
+  fill: none;
+  stroke: black;
+}
+
+.c3-region.regionX {
+  fill: blue;
+}
+.c3-region.regionY {
+  fill: red;
+}
+.c3-region.regionY2 {
+  fill: green;
+}
+
+.c3-xgrid-line.grid3 line {
+    stroke: purple;
+}
+.c3-xgrid-line.grid3 text {
+    fill: red;
+}
+
+h1{
+	color: #8a8a8a;
+	font-weight: bold;
+	margin-bottom: 30px;
+}

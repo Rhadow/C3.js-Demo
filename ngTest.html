@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="ngTestApp">
+
+<head>
+    <title>C3.JS Angular Test</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/c3.css">
+    <link rel="stylesheet" href="css/demo.css">
+</head>
+
+<body ng-controller="ngTestCtrl">
+    <div id="chart"></div>
+
+
+    <div ng-repeat="data in dataset1 track by $index">
+        <span ng-hide="isString(data)">Data {{$index}}</span>
+        <input type="number" ng-change="Refresh()" ng-model="dataset1[$index]" ng-hide="isString(data)">
+    </div>
+
+
+
+    <script src="js/jquery-1.11.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/d3.js" charset="utf-8"></script>
+    <script src="js/c3.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/ui-bootstrap.js"></script>
+    <script src="js/ngTest.js" charset="utf-8"></script>
+</body>
+
+
+</html>

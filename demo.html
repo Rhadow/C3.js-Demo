@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+    <title>C3.JS Demo</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/c3.css">
+    <link rel="stylesheet" href="css/demo.css">
+</head>
+
+<body>
+    <div class="container" ng-controller="ChartCtrl">
+        <div class="row">
+            <h1 ng-bind="title"></h1>
+            <div class="col-xs-12">
+                <div class="btn-group">
+                    <label class="btn btn-info btn-lg" ng-model="topic" btn-radio="'Type'" uncheckable>Type</label>
+                    <label class="btn btn-info btn-lg" ng-model="topic" btn-radio="'Test'" uncheckable>Demo</label>
+                    <label class="btn btn-info btn-lg" ng-model="topic" btn-radio="'Gauge'" uncheckable>Gauge</label>
+                </div>
+            </div>
+            <div class="col-xs-12" ng-show="topic=='Type'">
+                <hr>
+                <div id="chart"></div>
+                <div class="btn-group">
+                    <button class="btn btn-info btn-lg" ng-click="toLine()">Line</button>
+                    <button class="btn btn-info btn-lg" ng-click="toStep()">Step</button>
+                    <button class="btn btn-info btn-lg" ng-click="toBar()">Bar</button>
+                    <button class="btn btn-info btn-lg" ng-click="toArea()">Area</button>
+                    <button class="btn btn-info btn-lg" ng-click="toSpline()">Spline</button>
+                    <button class="btn btn-info btn-lg" ng-click="toScatter()">Scatter</button>
+                    <button class="btn btn-info btn-lg" ng-click="toPie()">Pie</button>
+                    <button class="btn btn-info btn-lg" ng-click="toGauge()">Gauge</button>
+                    <button class="btn btn-info btn-lg" ng-click="toDonut()">Donut</button>
+                </div>
+            </div>
+            <div class="col-xs-12" ng-show="topic=='Gauge'">
+                <hr>
+                <div id="chart2"></div>
+                <button class="btn btn-info btn-lg" ng-click="animateGauge()">Dance!</button>
+            </div>
+            <div class="col-xs-12" ng-show="topic=='Test'">
+                <hr>
+                <div id="chart3"></div>
+                <div class="btn-group">
+                    <button class="btn btn-info btn-lg" ng-click="loadData3()">Load Data 3</button>
+                    <button class="btn btn-info btn-lg" ng-click="unloadData3()">Unload Data 3</button>
+                    <button class="btn btn-info btn-lg" ng-click="flow()">Flow</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-1.11.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/d3.js" charset="utf-8"></script>
+    <script src="js/c3.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/ui-bootstrap.js"></script>
+    <script src="js/demo.js" charset="utf-8"></script>
+</body>
+
+
+</html>
